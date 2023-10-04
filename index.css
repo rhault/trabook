@@ -1,3 +1,20 @@
+:root{
+    --Primary: #FA7436;
+    --Primary-B: #222;
+    --Paragraph: #666
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header, section, footer{
+    padding: 0 10%;
+}
 section {
     background-color: rgb(240, 239, 231);
 }
@@ -6,6 +23,120 @@ header{
     background-color: rgb(241, 241, 231);
 }
 
+section h2{
+    color: #000;
+    font-family: 'Volkhov', serif;
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+section h2 .title__color{
+    font-family: 'Volkhov', serif;
+    color: var(--Primary);
+}
+
+.blog{
+    background-color: #FEFCFB;
+    padding-bottom: 389px;
+    position: relative;
+}
+
+.blog .card{
+    background-color: transparent;
+    border: none;
+    max-height: 275px;
+    max-width: 275px;
+}
+
+.blog .card .card-title{
+    color: var(--Primary-B);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 24px 0 16px 0;
+}
+
+.blog .card .card-text{
+    color: #999;
+    font-family: 'Inter', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+}
+
+.subscribe{
+    background-color: var(--Primary);
+    border-radius: 1.6rem;
+    top: calc(100% - 208px);
+    height: 416px;
+    left: calc(50% - (80% / 2));
+    position: absolute;
+    width: 80%;
+}
+
+.subscribe h2{
+    color: #fff
+}
+
+.subscribe .input-group{
+    border-radius: 1.8rem;
+    height: 6.8rem;
+    width: 50%;
+}
+
 footer{
-    background-color: ghostwhite;
+    background-color: #F7F8FC;
+    padding-top: 329px;
+}
+
+footer .footer-container{
+    border-bottom: 1px solid rgba(153, 153, 153, 0.56);
+    margin: 40px 0;
+}
+
+footer .footer-social{
+    width: 40%;
+}
+
+footer .footer-social p{
+    color: var(--Paragraph);
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 24px 0 10px 0;
+}
+
+
+footer .footer-menu{
+    padding-bottom: 40px;
+    text-align: left;
+    width: 50%;
+}
+
+footer .footer-menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .footer-menu ul li{
+    margin-bottom: 16px;
+}
+
+footer .footer-menu ul a{
+    color: var(--Paragraph);
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+}
+
+footer .footer-menu .title{
+    color: var(--Primary-B);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+footer .copyright p{
+    color: var(--Paragraph);
+    font-size: 1.6rem;
+    opacity: 0.8;
 }
